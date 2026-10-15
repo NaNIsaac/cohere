@@ -18,19 +18,21 @@ classifiers = [
 ]
 license-files = ["LICENSE"]
 
-dependencies = ['torch; sys_platform == "darwin"',
-                'torchvision; sys_platform == "darwin"',
-                'torchaudio; sys_platform == "darwin"',
-                'scikit-learn',
-                'tifffile',
-                'psutil',
-                'tqdm',
-                'matplotlib',
-                'scipy',
-                'sphinx',
-                'sphinx-pyproject',
-                'numpy>=2.0'
-               ]
+dependencies = [
+    'torch; sys_platform == "darwin"',
+    'torchvision; sys_platform == "darwin"',
+    'torchaudio; sys_platform == "darwin"',
+    'scikit-learn',
+    'tifffile',
+    'psutil',
+    'tqdm',
+    'matplotlib',
+    'scipy',
+    'sphinx',
+    'sphinx-pyproject',
+    'numpy>=2.0',
+    "xrayutilities>=1.8.0",
+]
 
 [tool.setuptools.packages.find]
     where = ["src"]
